@@ -1,0 +1,51 @@
+.card {
+  padding: $space-5;
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+}
+
+.title {
+  font-size: $font-size-md;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.description {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  gap: $space-3;
+}
+
+.fieldWrapper {
+  flex: 1;
+  max-width: 160px;
+}
+
+.currentInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-2 $space-3;
+  background-color: rgba($color-primary, 0.06);
+  border-radius: $radius-md;
+  font-size: $font-size-sm;
+  color: $color-primary;
+  font-weight: 500;
+}

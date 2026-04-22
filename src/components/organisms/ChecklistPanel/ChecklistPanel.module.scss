@@ -1,0 +1,103 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $space-3;
+  flex-wrap: wrap;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+}
+
+.title {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  color: $color-text;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: $color-border;
+  border-radius: $radius-full;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: $color-success;
+  border-radius: $radius-full;
+  transition: width $transition-base;
+}
+
+.progressLabel {
+  font-size: $font-size-xs;
+  color: $color-text-muted;
+  text-align: right;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.empty {
+  padding: $space-8 $space-4;
+  text-align: center;
+  color: $color-text-muted;
+  font-size: $font-size-sm;
+  background-color: $color-surface;
+  border: 1px dashed $color-border;
+  border-radius: $radius-lg;
+}
+
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-3 $space-4;
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  margin-top: $space-2;
+}
+
+.totalLabel {
+  font-size: $font-size-sm;
+  font-weight: 600;
+  color: $color-text-muted;
+}
+
+.totalAmount {
+  font-size: $font-size-lg;
+  font-weight: 800;
+  color: $color-text;
+}
+
+.totalPending {
+  font-size: $font-size-sm;
+  color: $color-warning;
+  font-weight: 600;
+}

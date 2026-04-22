@@ -5,13 +5,30 @@ node_modules/
 dist/
 dist-ssr/
 
+# Cobertura de tests
+coverage/
+
 # Variables de entorno
 .env
 .env.local
 .env.*.local
 
-# Editor
-.vscode/
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+
+# Editor — VSCode (se guarda solo si hay config de workspace compartida)
+.vscode/*
+!.vscode/extensions.json
 .idea/
 *.suo
 *.ntvs*
@@ -19,9 +36,6 @@ dist-ssr/
 *.sln
 *.sw?
 
-# Logs
-*.log
-npm-debug.log*
-
-# TypeScript cache
-*.tsbuildinfo
+# OS
+.DS_Store
+Thumbs.db
