@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-3;
+  padding: $space-3 $space-4;
+  background-color: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  transition: background-color $transition-fast, border-color $transition-fast;
+
+  &--checked {
+    background-color: rgba($color-success, 0.04);
+    border-color: rgba($color-success, 0.25);
+  }
+}
+
+.left {
+  flex: 1;
+  min-width: 0;
+}
+
+.amount {
+  font-size: $font-size-sm;
+  font-weight: 700;
+  color: $color-text-muted;
+  flex-shrink: 0;
+
+  &--checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+}
