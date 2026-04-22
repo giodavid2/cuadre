@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: $font-size-lg;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.count {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.empty {
+  padding: $space-8 $space-4;
+  text-align: center;
+  color: $color-text-muted;
+  font-size: $font-size-sm;
+  background-color: $color-surface;
+  border: 1px dashed $color-border;
+  border-radius: $radius-lg;
+}
