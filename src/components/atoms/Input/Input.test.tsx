@@ -19,8 +19,7 @@ describe('Input', () => {
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
   });
 
-  it('acepta y refleja el valor controlado', async () => {
-    const user = userEvent.setup();
+  it('acepta y refleja el valor controlado', () => {
     const onChange = vi.fn();
     render(<Input value="hola" onChange={onChange} />);
     expect(screen.getByRole('textbox')).toHaveValue('hola');
